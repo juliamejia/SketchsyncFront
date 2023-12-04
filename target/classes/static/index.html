@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+
+    <title>Sketchsync!!!</title>
+
+    <link rel="stylesheet" href="CSS/inicio.css">
+    <script src="JS/app.js"></script>
+    <script src="JS/apiclient.js"></script>
+    <script src="JS/controlUsers.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://alcdn.msauth.net/lib/1.3.0/js/msal.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="abs-center">
+        <img src="../images/sketchsync.png" width="500" height="380">
+    </div>
+
+</div>
+
+<div class="purple-box abs-center">
+
+
+    <div class="d-grid gap-2">
+        <label style="text-align: center">Dependiendo de la cuenta que use</label>
+        <label style="text-align: center">se le dirigirá a una sesión u otra</label>
+
+        <button onclick="signIn()" type="button" class="btn btn-outline-secondary btn-lg btn-white" data-bs-toggle="modal" data-bs-target="#masterModal">
+            Login
+        </button>
+        <br><br>
+    </div>
+</div>
+
+</body>
+
+
+</html>

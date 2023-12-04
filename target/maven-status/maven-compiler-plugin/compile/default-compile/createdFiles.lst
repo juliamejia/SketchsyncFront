@@ -1,0 +1,11 @@
+edu\eci\arsw\controllers\SketchsyncAPIController.class
+edu\eci\arsw\SketchsyncWebSocketConfig.class
+edu\eci\arsw\services\SketchsyncServices.class
+edu\eci\arsw\persistence\SketchsyncPersistence.class
+edu\eci\arsw\model\Clue.class
+edu\eci\arsw\SketchsyncAPIApplication.class
+edu\eci\arsw\model\User.class
+edu\eci\arsw\model\Point.class
+edu\eci\arsw\controllers\STOMPMessage.class
+edu\eci\arsw\persistence\impl\InMemorySketchsyncPersistence.class
+edu\eci\arsw\persistence\SketchsyncPersistenceException.class

@@ -1,0 +1,65 @@
+.abs-center {
+  display: flex;
+  justify-content: center;
+}
+
+.abs-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.abs-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 800px;
+  height: 55px;
+}
+
+body{
+    background-image: url(../images/background2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.purple-box {
+        background-color: #cbabfb;
+        padding: 20px;
+        border: 1px solid #ccc;
+        max-width: 500px; /* Puedes ajustar el ancho máximo según tus necesidades */
+        height: 150px; /* Establece la altura según tus necesidades */
+        margin: 0 auto; /* Centra el cuadro en la página */
+        text-align: center;
+    }
+
+.canva-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ask {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1000px;
+  height: 50px;
+}
+
+h1.concss {
+  font-size: 34px;
+  font-weight: bold;
+  font-style: comic-sans;
+  font-variant: small-caps;
+  font-family: cursive;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  color: #000000;
+  text-align: center;
+  word-spacing: 8px;
+}
+
+
