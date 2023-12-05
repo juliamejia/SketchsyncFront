@@ -1,10 +1,10 @@
 var apiclient = (function (){
-    var backendUrl = "https://sketchsyncback.azurewebsites.net";
+    var backendUrl = "http://192.168.56.1:8080";
 
     var getUser = function (id, callback){
         $.ajax({
             type: "GET",
-            url: backendUrl + "/Sketchsync/" + id,
+            url: backendUrl + "Sketchsync/" + id,
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (data){
@@ -19,7 +19,7 @@ var apiclient = (function (){
         return new Promise(function (resolve, reject){
             resolve(
                 $.ajax({
-                    url: backendUrl + "/Sketchsync",
+                    url: backendUrl + "Sketchsync",
                     type: "POST",
                     data: data,
                     contentType: "application/json"
@@ -31,7 +31,7 @@ var apiclient = (function (){
     var getAllUsers = function(callback){
         $.ajax({
                 type: "GET",
-                url: backendUrl + "/Sketchsync/all",
+                url: backendUrl + "Sketchsync/all",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function(data){
@@ -41,7 +41,7 @@ var apiclient = (function (){
     var getOrganizerName = function(callback){
         $.ajax({
             type: "GET",
-            url: backendUrl + "/Sketchsync/OrganizerName/OrganizerName",
+            url: backendUrl + "Sketchsync/OrganizerName/OrganizerName",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
@@ -52,7 +52,7 @@ var apiclient = (function (){
         return new Promise(function(resolve,reject){
             resolve(
                 $.ajax({
-                    url: backendUrl + "/Sketchsync/clean",
+                    url: backendUrl + "Sketchsync/clean",
                     type: 'DELETE'
                 })
             )
@@ -63,7 +63,7 @@ var apiclient = (function (){
             return new Promise(function (resolve, reject){
                 resolve(
                     $.ajax({
-                        url: backendUrl + "/Sketchsync/"+name,
+                        url: backendUrl + "Sketchsync/"+name,
                         type: "PUT",
                         contentType: "application/json"
                     })
@@ -77,7 +77,7 @@ var apiclient = (function (){
         resolve(
             $.ajax({
                 type:"POST",
-                url: backendUrl + "/Sketchsync/Clue ",
+                url: backendUrl + "Sketchsync/Clue ",
                 contentType: "application/json",
                 data:data
             })
@@ -87,7 +87,7 @@ var apiclient = (function (){
     var getClue = function(callback){
         $.ajax({
             type: "GET",
-            url: backendUrl + "/Sketchsync/TakeClue",
+            url: backendUrl + "Sketchsync/TakeClue",
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(data){
