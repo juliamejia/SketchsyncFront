@@ -6,7 +6,7 @@ var app = (function (){
     var initialX,
         initialY;
 
-    var backendUrl = "http://192.168.56.1:8080";
+    var backendUrl = "https://sketchsyncback.azurewebsites.net/";
 
     function defcolor(){
         let input= document.getElementById('color');
@@ -124,7 +124,7 @@ var app = (function (){
 
 
     var connectAndSubscribe = function (name) {
-        var socket = new SockJS(backendUrl + '/stompendpoint');
+        var socket = new SockJS(backendUrl + 'stompendpoint');
         stompClient = Stomp.over(socket);
 
         //subscribe to /topic/TOPICXX when connections succeed

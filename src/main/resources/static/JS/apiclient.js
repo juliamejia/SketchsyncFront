@@ -1,5 +1,5 @@
 var apiclient = (function (){
-    var backendUrl = "http://192.168.56.1:8080";
+    var backendUrl = "https://sketchsyncback.azurewebsites.net/";
 
     var getUser = function (id, callback){
         $.ajax({
