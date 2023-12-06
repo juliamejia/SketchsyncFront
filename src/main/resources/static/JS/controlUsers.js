@@ -3,7 +3,7 @@ async function signIn(){
         auth: {
             clientId: '2900126f-1811-46f9-91f1-03e9e383bd94',
             authority: 'https://login.microsoftonline.com/common/',
-            redirectUri: 'https://sketchsyncback.azurewebsites.net/index.html'
+            redirectUri: 'https://sketchsync.azurewebsites.net/index.html'
         }
     };
     var client = new Msal.UserAgentApplication(config);
