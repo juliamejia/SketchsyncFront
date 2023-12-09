@@ -201,6 +201,9 @@ var app = (function (){
     };
 
     var userConnected = function (data){
+        if (objetoPropiedadName !== null){
+            var name = objetoPropiedadName.name;
+        }
         stompClient.send("/topic/"+data.name, {}, "actualizarUsuarios");
     }
 
