@@ -99,6 +99,7 @@ var app = (function (){
 
 
     var notificarGanador = function (data){
+        console.log("Función notificarGanador llamada");
         var ganador = "";
         data.forEach((element) => {
             if(element.isGanador){
