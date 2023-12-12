@@ -1,5 +1,5 @@
 var apiclient = (function (){
-    var backendUrl = "https://sketchsyncback.azurewebsites.net/";
+    var backendUrl = "http://sketchsync.trafficmanager.net/";
 
     var getUser = function (id, callback){
         $.ajax({

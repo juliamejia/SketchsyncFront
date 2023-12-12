@@ -6,7 +6,7 @@ var app = (function (){
     var initialX,
         initialY;
 
-    var backendUrl = "https://sketchsyncback.azurewebsites.net/";
+    var backendUrl = "http://sketchsync.trafficmanager.net/";
 
     function defcolor(){
         let input= document.getElementById('color');
