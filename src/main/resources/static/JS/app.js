@@ -201,11 +201,8 @@ var app = (function (){
     };
 
     var userConnected = function (data){
-        if (objetoPropiedadName !== null){
-            var name = objetoPropiedadName.name;
+            stompClient.send("/topic/"+data.name, {}, "actualizarUsuarios");
         }
-        stompClient.send("/topic/"+data.name, {}, "actualizarUsuarios");
-    }
 
     var drawAllPointsCanvas = function (data){
         if(data.points.length > 0) {
